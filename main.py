@@ -5,9 +5,6 @@ import config
 import datetime
 import logging
 
-logger.info(f"Run count: {runcount}")
-send_telegram("Telegram test successful")
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s SevenRooms Booking Checker - %(funcName)s: %(message)s",
@@ -126,6 +123,7 @@ def main():
     runcount = 0
     while True:
         logger.info(f"Run count: {runcount}")
+        send_telegram("Telegram test successful")
         runcount += 1
         for date in config.DATES_NEEDED:
             available_slots = check_availability(date)
