@@ -107,7 +107,7 @@ def check_availability(date_needed):
     )
     data = response.json()
     try:
-        print(data)
+        logger.info(data)
         available = data["data"]["availability"][date_needed][0]["times"]
         return available
     except Exception as e:
