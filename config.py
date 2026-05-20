@@ -36,4 +36,4 @@ DATES_NEEDED = [
     "2026-05-28"
 ]  # Dates you want to look for. Example: ['2021-10-01', '2021-10-02'] (YYYY-MM-DD format)
 VENUE = "oyatte"  # Venue name/ Restaurant ID (FOLLOW how to get restuarant ID from readme for steps). Example: sticksnsushicoventgarden
-RETRY_AFTER = 120  # seconds to wait before checking again
+RETRY_AFTER = 15  # seconds to wait before checking again
